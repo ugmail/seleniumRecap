@@ -1,15 +1,15 @@
 package com.cydoe.pages;
 
 import com.cydoe.utilities.Driver;
-import com.cydoe.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Imdb_Pages {
 
-    public Imdb_Pages() {
-        PageFactory.initElements(Driver.getDriver(), this);
+    public Imdb_Pages(){
+        PageFactory.initElements(Driver.getDriver(),this);
+
 
 
     }
@@ -19,6 +19,13 @@ public class Imdb_Pages {
 
     @FindBy(xpath = "(//a[@class='ipc-metadata-list-summary-item__t'])[1]")
     public WebElement firstElementOfResult;
+
+    @FindBy(xpath = "//a[.='All cast & crew']")
+    public WebElement seeAllStars;
+
+
+
+
 
 
 }
