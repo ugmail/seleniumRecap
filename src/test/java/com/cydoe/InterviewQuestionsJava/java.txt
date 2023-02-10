@@ -1,0 +1,468 @@
+Java Interview preparation
+
+1.What would you rate your Java experience out of 10?
+	- First thing that should be mention about is that do not rate yourself 10 out of 10
+	- If you feelling really comfotable you can rate yourself 8 out of 10
+	- If you feeling that you can okey with java  you can rate yourself 7 out of 10
+	- If you are not feeling really you are really good at Java but still you are okey with java  you can rate yourself 7 out of 10
+
+
+2.What is your Java level? Do you use it in terms of testing only or in terms of development as well?
+	- Either of of those answers are correct. If you said i used only for testing term, there will be less challanging question. But if you said that i used for both . It is possible to get a lot of question about OOP or Data structure and more about
+
+
+3.OOP concepts and how you used them in your last project? ***
+	OOP conceps are:
+		- Encapsulation : hiding data. We are hiding data by making them access modifier private and then using getter() and setter() methods
+			- getter(): allows us to read the data that has private access modifiers
+			- setter(): allows us to set the data, give some restriction on data
+
+		-inharitance(): Improving the reusability of object methods and fields by inheriting them to the sub class. In order to use one class methods and variables we are inheriting to use them in the other class (Easiets way to be rich)
+
+		- Abstraction : there is two ways of achiving abstraction. As soon as we achived abstraction we are able to create abstract methods(Methods without boyd) inside class or interfaces
+			- Abstract class: Meant to inherited (parent class, super class)
+			- interfaces : Allows us multiple inheritance. adding spesific methods and variables to the class or interface. we can not create object from interfaceses
+
+		- Polymorphism: Making parent as a refererance type and craeting object from child class
+
+	how you used them in your last project?
+		POJO class: in pojo class i declared variables privete and used getter and setter methods for them (Encapsulation)
+		In Test base and Base page class i used inheritance (inharitance)
+		i created Driver class as a abstract and inherited from other class (Abstraction)
+		I created a driver class and made return type Web Driver so its allow me to create multiple driver object from it such as chorme browser and firefox driver (Polymorphism)
+
+4.What do you know about Interface?
+	- It is used for achive abstraction, one class can inherited only one abstract class but can inherit as much as we want
+	- Provides additinional methods and variables to the class that needs those methods
+
+5.What is the benefit of Interface?
+	- Main benefits of interfaces are it allow us to inherit many interfaces at the same time by using implement keyword
+
+
+6.What kind of collections you used in Java?
+	- I used List: for examples in the selenium used to store element
+	- I used Set : in the selenium getWindowHanle provides set of window id, when ever there is dublicated element i used set
+	-
+
+7.How to call the last stored variable in an Array?
+	- Once we called length it return length of array if we get minus 1 it will give the last element of array = array.length()-1
+
+8.Where do you use Set, HashMap, List in your framework?
+
+	- Set: When ever i want get the unique options from the dropdown i or whenever i do handle multiple tabs i used
+	- HashMap: i used whenever i want to get the data from properities file
+	- List: for examples in the selenium used to store element
+
+9.What is the difference between iterator and for/for each loops?
+	- Iteretor is an interface in java and Pre condition using iterator if the object having a IS relation with iterable we can use it
+	- As long as the is a data structure we can use for/forEach loop
+
+	- Main advantage of Iterator is it will allow us to remove element from a collection type. WO Iterator it is not possible to remove a element from an collection type
+
+10.What iterator methods do you use?
+	- First creating a Iterator object from iterator)() method and then calling hasNext() method to check it and using next() methods to get iterated element. And if you want to remove it you we calling remove() method
+		- iterator()
+		- hasNext()
+		- hasNext()
+		- remove()
+
+-----------------------------------11.How do you write or read data from or to file with Java?
+	-
+
+
+12. Difference between Heap and Stack?
+
+	- Heap and stack are memories location
+		Stack: Memory location Only for the local variables.
+		Heap: All the object And intance variable stored in the heap.
+			- Intance variables: are created outside of the block and belongs to the class
+			- Local variables: created with in the block
+
+
+
+
+13. You have a list of fruits which some of them repeats. How would you write a method which will return a fruit that repeats the most?
+
+	1- We can use Collection.frequency() methods
+	2-  First we can find every single elements and which ever frequency is the max then we can return elements
+
+
+14. Java version you are using?
+ - java 8 or 11 version
+
+
+
+
+15. Abstraction vs Interface?
+
+	Abstraction:
+		- is a class.
+		- you can have construction and intance variables
+		- you can use any access modifiers in abstract class
+		- meant to be parent class
+		- extend keyword used for inheritance
+		- one class can only inherite single abstract class
+	Interfaces:
+		- is is not a class. is pure abstrcantion.
+		- you can not have constructin intance variables
+		- You can ony use public access modifiers
+		- implement keyword used to inharitance
+		- one class can inherite as many as interfaces
+
+
+16.Java generics?
+
+	generics: helping us to assure the type safety
+		example: String num = 100; you can not assing integer data to the String type
+
+
+17.What is HashMap explain, how do you use in your framework?
+
+	- HashMap: it for the pair of the data and we can get data from jason and properities file
+		in the framework i used in the pojo class
+
+
+18. What is thread safe? How do you make your code thread safe?
+
+	Thread safe: one thread at the time. thread exist in every single aplication, process. Thread is sub squences of process
+	- Synchronize methods and Synchronize block used to achive keyword
+
+
+19.String builder/buffer differences?
+	Builder: mutable both of them are char squences
+	Buffer: immutable, Thread safe, synchronized
+	 		mutable: possible to change it
+	 		immutable: imposible to modify it
+
+
+20.How can you achieve abstraction?
+
+	- Abstract class
+	- interfaces
+
+
+21.What is the difference between List, Queue and Set?
+
+	- List: Acceps dublicate, has index number, last in first out LIFO(Stack)
+	- Queue: Acceps dublicate, does not has index number. first in first out order (FIFA)
+	- Set: does not Acceps dublicate, does not has index number
+
+
+
+22. What is Map?
+	- Data structure for pairs of data, key and value
+
+
+23.How do you iterate over HashMap?
+
+	- by using loop we can iterate maps.
+	- we can iterate all the values by using values() method
+	- we can iterate all the keys by using keys() method
+	- we can iterate both values and keys by using entrySet() method, most of the time this the best way iterating a map
+
+
+24.What is garbage?
+
+	- Garbage the object that is not going to be used anymore in the coming process. In order to re-use a object we have to give a reference(variable) to the object.
+	- If a object is not assigned any variables, it is avaliable for the garbage collector. Garbage collector calles finalize() method to destroy the object
+	- This process implicity called by the compiler
+
+
+25.What is class in Java?
+
+	- Class is templed container for the object. Once we have class we can create from it , Object can not be create W/O class, It cames from the class
+
+
+26.What kind of exception you faced and how you handled?
+	For java:
+		- Null pointer(Whenever is a null, and you try to call it you will get null pointer exception), Arithmatic, IndexOutOfBund exceptions
+
+	For selenium:
+		- NO such element, no such window
+
+ 27.What is the difference between a HashMap and HashTable?
+
+ 	- HashMap: not Synchronized, takes null keyword
+ 	- HashTable: Synchronized, does not take null keyword
+
+
+28.What is polymorphism? What is runtime polymorphism?
+
+	- Polymorhism: focus on forms and behaviours of the object
+	- Runtime(Overriden) Polymorhism: if there is a any runtime polymorhism it is going to execute object mehtods
+		example: Web Driver driver = new ChromeDriver();
+		 Driver and Chrome driver Both of them have driver.get() mehtod but it is going to execute chromeDriver class method because it is overriden in that class ;
+
+
+29. Give me an example from your framework where you used OOP concepts? ***
+
+	- Encapsulation: in the pojo class
+	- Inharitance: base bage and test base classes
+	- Abstraction: Web element, Web driver, List and Set all of them are interfaces
+	- Polymorhism: used in the Driver class to achive different driver object from it
+
+
+30.What is global variable?
+	- When it is said global variable it is means that static variables.
+		Why it is called global variable:
+			- it can be called both in the static methods and intance methods but intance variables only can be called in the instance methods
+			- You dont need an object to call static variables . You can call from class names
+			- You need and object to call intance variables.
+
+31.How do you handle exceptions?
+	- We can handhle with try catch block for the unchecked or we can use "Twrows" Keyword for the checked exception
+
+
+32.Difference between protected and default?
+	- Both visible with in the same package
+	- Protected:
+		- If protected inherited outside of the package it is visible other than it is not visible.
+
+	-  Default: it not visible outside of the package. Only visible with in same package
+
+33.Can you give “public: access modifier where you are overriding a protected method?
+	- NO, We can only give same or more visible access modifiers to the overridding method
+	- If a method is a default we can give protected or public. We can not give private beacuse it is less visible
+	- We can not override static and final methods. Because static has only one coppies, and final is meant to you can not change implementaion
+
+34.How can you find max value in an int array?
+	- If sorthed is allowed we can sorth the array.
+	- We can use loops fo iterating and we can compare every single element starting from zera and which ever is max we can assign to a variable named max.
+
+
+35.Can class be final?
+	- Except abstract (Parent) class every class is can be final. But we have to make sure
+	- Yes, If we want to make a class super(parent) class it can not be final.
+	- We are making our class final to prohibit for inheriting from other class
+
+	- Also we can use final keyword for the variables and methods, Once a variable is final we can not re- assigned it, Once a method is final we can not overrided it
+
+
+36.What is the different BTW Static methods and other methods ?
+
+	- Belongs to the class. We can call via class name
+	- We do not have to create a object to call it
+	- We are using static method in our frame work as a get() method Assert() method
+
+
+
+ 37.Static, non-static methods?
+
+ 	- Non Static: It belongs to the object, We can not call though class name
+ 	- Only the intance mehtods can be overridden in java, Statics can not be overridden
+ 	- In intance methods we can use intance and static variables but in static methods we can only use static variables
+
+
+38.Up casting, down casting?
+
+	- It is used in Polymorphism. It means casting the referance type of object
+	- Upcasting: Smaller type to the larger type, casting implicitly by compiler
+	- Downcasting: Casting larger type to the smaller type, casting explicity
+
+	Exaple:	List<Integer> list = new Stack<>(Arrays.asList(1,2,3,4,5)); // Upcasting
+
+			list.pop();  // we can not call without casting referance type to stack
+
+			((Stack)list).pop(); // Downcasting // now we can call pop() method which is belongs to the Stack class
+
+
+
+39.What is the difference between final, finally and finalize?
+
+	Final: It is a keyword used for the class, variables and methods
+	Finally: It is block and used after the try catch block and gets execute in anyway, WO tryCatch block we can not use Finally method
+	Finalize: It is called by garbage collector to destroy the garbage object that is no referancing any referance type
+
+
+40.Tell me how do you understand immutability in java and what is the difference between mutable?
+
+	- Immutability: Once a object is created you it is now changeable, By using FINAL keyword we can make classes, variables, and methods immutable
+	- Mutability: Once you created a object you can change it
+
+
+41.Can we have multiple inheritance in java? If yes, how do we achieve that?
+
+	- If there is a only classes it is not possible to inherit multible classes
+	- One class only EXTEND single class but able to IMPLEMENT multiple interfaces
+	- By using implements keyword we can achive multiple inheritance
+
+
+
+42.How did you implement polymorphism in your framework?
+
+	- In Driver class we are Web driver as a referance type and we are creating different driver object from it
+
+		Examle: Web Driver = new ChromeDriver();
+				Web Driver = new FirefoxDriver();
+
+
+43.What could be the reason if you are getting NullPointerException?
+
+	- NullPointerException accures when there is no object but we try to call intances
+
+		Example: String name = null;
+
+			name.charAt(0); ---> it will give null pointer exception
+
+
+44.When to use Array or ArrayList? Why?
+
+	- If we are only dealing with object we can use Arraylist
+	- If there is data and it includes perimives we can use Array
+
+	- Size of ArrayList is not fixed, We can add and remove any element
+	- Size of Array is fixed, We can not add and remove any element
+
+	- Array is more faster
+
+
+
+45.Method overloading VS Method Overriding?
+
+	- Methods overloading:
+		- Multiple methods but same name.
+		- it can also be in the same or different classes
+		- Access modifiers can be any access modifiers
+		- Return type is could be same or not
+		- Parameter must be DIFFERENT
+		- We can overload any mehtod
+
+	- Methods overriding:
+		 - One method but different implementation
+		 - It has to be in the sub class only
+		 - Access modifiers shoul be same or more visible in the subClasses
+		 - Return type is must be same
+		 - Parameter must be same
+		 - We can not override Final and Static methods
+
+
+46.What are the differences between Throw and Throws keyword?
+
+	- Throw:
+	 	- Used for creating exception
+	 	- Used with in block
+	 	- Used in browser class in our framework, if the given browser name is not matching it throwed an exception
+
+	- Throws:
+		- Used for handling the exceptions
+		- Used in the method signutere
+		- Used for checked exception
+
+47.Tell me the differences between HashMap and LinkedHashMap?
+	- Similarties:
+		- Both of them accepts null keyword
+		- Both of them are not synhronized
+
+	HashMap: Does not keeps insertion order
+
+	LinkedMap: Keeps insertion order
+
+
+48.Tell me the differences between Static and Instance Variable/Block?
+
+	Static variables:
+	 - belongs to the class
+	 - there is a only one copy for the static variables
+	 - if we want a variable that all object should have same value we are using static variables
+	 - They are a global variables and we can call in anywhere we want via class name
+	Intance variables:
+	 - belons to the object
+	 - if we want a variable that all object should have different value we are using intance variables
+
+
+	 Static blocks:
+	 - Used for initializing(setting) intance variables
+	 - It is created as regardless of different object
+
+	 Intance block:
+	 - used for initilazing intance variables
+
+
+49.What’s the use of super keyword? What’s the use for this keyword?
+
+	- both of them references object of intances
+
+	- Super: reference to the object intances of super(parent) class
+		- keyword used to call parent
+		- super() : Intance variables and methods of super class
+		- super.  : calls the constructer super class
+	- This:
+		- reference to the object intances of current class
+		- this.   : Intance variables and methods
+		- this()  : for the constructer
+
+
+
+50.Why OOP concept is important for producing a software?
+
+	- OOP: Main purpose of OOP is making object re-usable and creating connection btw object.
+	- If there is less code it is easy to read and maintain it.
+	- Inharitance most important OOP concerpt. Because WO inheritance Polymorhism and Abstraction can not occure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
