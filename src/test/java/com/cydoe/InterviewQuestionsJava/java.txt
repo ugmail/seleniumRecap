@@ -4,7 +4,8 @@ Java Interview preparation
 	- First thing that should be mention about is that do not rate yourself 10 out of 10
 	- If you feelling really comfotable you can rate yourself 8 out of 10
 	- If you feeling that you can okey with java  you can rate yourself 7 out of 10
-	- If you are not feeling really you are really good at Java but still you are okey with java  you can rate yourself 7 out of 10
+	- If you are not feeling really you are really good at Java but still you are okey with java  you can rate yourself 6 out of 10
+	- Do not rate yourself 2 or 3 out of 10
 
 
 2.What is your Java level? Do you use it in terms of testing only or in terms of development as well?
